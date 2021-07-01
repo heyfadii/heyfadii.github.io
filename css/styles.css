@@ -43,6 +43,23 @@
   box-sizing: border-box;
 }
 
+.custom-img-mobile {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+
+}
+
+.custom-img-mobile img {
+  width: 200px;
+}
+
+@media (min-width: 992px) {
+  .custom-img-mobile {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -76,8 +93,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  /* font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  font-family: sans-serif
+  font-family: sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
@@ -88,7 +104,7 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 6rem;
+    font-size: 3rem;
   }
 }
 
@@ -97,7 +113,7 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -106,7 +122,7 @@ h3, .h3 {
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -115,7 +131,7 @@ h4, .h4 {
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -386,7 +402,7 @@ legend {
 }
 @media (min-width: 1200px) {
   legend {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 legend + * {
@@ -503,7 +519,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-4 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -548,7 +564,7 @@ progress {
 
 .initialism {
   font-size: 0.875em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .blockquote {
@@ -10798,19 +10814,19 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 6rem !important;
+    font-size: 3rem !important;
   }
 
   .fs-2 {
-    font-size: 3.5rem !important;
+    font-size: 2.5rem !important;
   }
 
   .fs-3 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
   }
 
   .fs-4 {
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
   }
 }
 @media print {
@@ -10876,7 +10892,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 h1, .h1 {
@@ -10889,11 +10905,10 @@ p.lead {
 }
 
 .subheading {
-  /* font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  font-family: sans-serif
-  text-transform: uppercase;
+  font-family: sans-serif;
+  text-transform: none;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 #sideNav {
@@ -10903,7 +10918,7 @@ p.lead {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
-  text-transform: uppercase;
+  text-transform: none;
 }
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
@@ -10959,7 +10974,7 @@ p.lead {
   background-color: #495057;
   color: #fff;
   border-radius: 100%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-right: 1.5rem;
 }
 .social-icons .social-icon:last-child {
